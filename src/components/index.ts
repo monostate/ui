@@ -48,3 +48,4 @@ export * from "./pulse-animation";
 export * from "./section-cards";
 export * from "./notification-stack";
 export * from "./gradient-stat";
+export * from "./glass-panel";

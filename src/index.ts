@@ -7,10 +7,11 @@ export * from "./primitives";
 export * from "./components";
 
 // Export utilities
-export { cn } from "./lib/utils";
+export { cn, glass, glassStyles, type GlassStyle } from "./lib/utils";
 
 // Export configuration utilities
 export * from "./config/env";
+export * from "./config/glass";
 
 // Type exports
 export type * from "./lib/utils";

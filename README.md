@@ -13,6 +13,7 @@ A modern React component library with 89 production-ready components following a
 - 🎨 **Tailwind CSS** - Utility-first styling
 - 🌙 **Dark Mode** - Built-in dark mode support
 - 📱 **Responsive** - Mobile-first responsive design
+- 🪟 **Glass Morphism** - Built-in glass effect utilities
 
 ## Installation
 
@@ -302,6 +303,52 @@ function App() {
 **Data Management:** ComparisonTable, WeatherWidget, CryptoCard, Metric Ring
 
 **Effects:** AnimatedGradientText, VoiceWave, FloatingAction
+
+## Glass Morphism Effects
+
+Apply beautiful glass morphism effects to any component using our built-in utilities:
+
+```tsx
+import { glass, Button, Card } from '@monostate/ui'
+
+// Using the glass() utility function
+<Button className={glass("medium")}>
+  Glass Button
+</Button>
+
+// Different glass intensities
+<Card className={glass("subtle")}>Subtle glass effect</Card>
+<Card className={glass("medium")}>Medium glass effect</Card>
+<Card className={glass("strong")}>Strong glass effect</Card>
+<Card className={glass("ultra")}>Ultra glass effect</Card>
+
+// Combine with other classes
+<div className={glass("medium", "p-6 rounded-lg")}>
+  Glass container with padding and rounded corners
+</div>
+```
+
+### Glass Effect Requirements
+
+For glass effects to be visible, ensure there's content behind the component to blur. Glass effects work best with:
+- Gradient backgrounds
+- Images or patterns
+- Other content layers
+
+### Glass Configuration
+
+```tsx
+import { getGlassClasses } from '@monostate/ui'
+
+// Configure glass effects
+const glassClass = getGlassClasses({
+  enabled: true,
+  blur: 'md',        // 'sm' | 'md' | 'lg' | 'xl'
+  opacity: 0.1,      // Background opacity
+  borderOpacity: 0.2,// Border opacity
+  noise: true        // Enable noise texture
+}, isDarkMode)
+```
 
 ## Customization
 
