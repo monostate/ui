@@ -374,6 +374,22 @@ Components use Tailwind CSS classes and CSS variables for easy customization:
 - React 18.0.0 or higher
 - Tailwind CSS 3.0 or higher
 
+## Changelog
+
+### v0.3.0
+- Export `cn` utility function for class name management
+- Export `ThemeProvider` from next-themes for theme management
+- Move `next-themes` to peerDependencies
+
+### v0.2.1
+- Move `react-hook-form` to peerDependencies
+
+### v0.2.0
+- Add glass morphism effects system
+
+### v0.1.0
+- Initial release with 89 production-ready components
+
 ## License
 
 MIT © Monostate
